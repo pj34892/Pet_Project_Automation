@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browserName" value="chrome"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.petProjectAutomationTest.TestNg.LoginTest">
+        <methods>
+          <include name="LoginCheck"/>
+          <include name="AddToCart"/>
+          <include name="getWebDriver"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.petProjectAutomationTest.TestNg.LoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

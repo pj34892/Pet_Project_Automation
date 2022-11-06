@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite"> 
+ <parameter name="browserName" value="chrome"></parameter>
+  <parameter name="username" value="mk12345"></parameter>
+  <parameter name="password" value="mk12345"></parameter>
+ 
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="commonFunctionality.AbstractBrowser"/>
+      <class name="com.petProjectAutomationTest.TestNg.LoginTest">
+      <methods>
+      <include name="LoginCheck"></include>
+      <include name="AddToCart"></include>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
