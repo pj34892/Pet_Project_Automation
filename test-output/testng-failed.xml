@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="mk12345"/>
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="username" value="mk12345"/>
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="commonFunctionality.Test">
+      <class name="com.petProjectAutomationTest.TestNg.LoginTest">
         <methods>
-          <include name="main"/>
+          <include name="LoginCheck"/>
+          <include name="AddToCart"/>
+          <include name="getWebDriver"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- commonFunctionality.Test -->
+      </class> <!-- com.petProjectAutomationTest.TestNg.LoginTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
