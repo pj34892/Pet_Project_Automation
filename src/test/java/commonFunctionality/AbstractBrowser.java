@@ -27,8 +27,11 @@ public class AbstractBrowser {
 		switch (browserName.toLowerCase())
 		{
 		case "chrome":
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+//			WebDriverManager.chromedriver().setup();
+//			driver = new ChromeDriver();
+			 System.setProperty("webdriver.chrome.driver", "D:\\Softwares\\chromedriver.exe");
+			 driver = new ChromeDriver();
+			 //made changes
 			break;
 
 		case "edge":

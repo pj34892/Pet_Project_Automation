@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="mk12345"/>
   <parameter name="browserName" value="chrome"/>
+  <parameter name="username" value="mk12345"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="com.petProjectAutomationTest.TestNg.LoginTest">
